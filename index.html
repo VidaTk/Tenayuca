@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tenayuca 66 CDMX | Inversión Híbrida Boutique | 5 Locales + 4 Departamentos | $26.5M</title>
+<meta name="description" content="Tenayuca 66, Letrán Valle. Edificio boutique mixto: 5 locales comerciales + 4 departamentos rentables. Esquina estratégica. Permiso para 4to piso. $26,500,000 MXN."/>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/VidaTk/tenayuca-66/main/assets/FAVICON_VRE.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0A2540;
+  --gold:#C9A84C;
+  --gold-light:#E8C96A;
+  --cream:#FAF8F4;
+  --warm:#F2EDE4;
+  --text:#1A1A1A;
+  --muted:#6B6560;
+  --white:#FFFFFF;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'DM Sans',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--text);background:var(--cream);overflow-x:hidden}
+
+/* ── HERO ── */
+.hero{
+  position:relative;min-height:100vh;display:flex;flex-direction:column;
+  background:var(--navy);overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background-size:cover;background-position:center;background-repeat:no-repeat;
+  opacity:0.25;
+}
+.hero-grain{
+  position:absolute;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity:0.4;pointer-events:none;
+}
+.hero-gold-line{
+  position:absolute;left:0;top:0;width:3px;height:100%;
+  background:linear-gradient(to bottom,transparent,var(--gold),transparent);
+  opacity:0.6;
+}
+
+nav{
+  position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;
+  padding:10px 60px;border-bottom:1px solid rgba(201,168,76,0.2);
+}
+.nav-logo{
+  font-family:var(--serif);font-size:22px;font-weight:300;letter-spacing:0.12em;
+  color:var(--white);text-transform:uppercase;
+}
+.nav-logo span{color:var(--gold)}
+.nav-logo img{height:40px}
+.nav-badge{
+  font-size:11px;letter-spacing:0.15em;text-transform:uppercase;
+  color:var(--gold);border:1px solid rgba(201,168,76,0.4);
+  padding:6px 14px;font-family:var(--sans);font-weight:400;
+}
+
+.hero-content{
+  position:relative;z-index:5;flex:1;display:flex;flex-direction:column;
+  justify-content:center;padding:40px 60px 60px;max-width:780px;
+}
+.hero-eyebrow{
+  font-size:11px;letter-spacing:0.25em;text-transform:uppercase;
+  color:var(--gold);font-family:var(--sans);font-weight:400;margin-bottom:24px;
+  display:flex;align-items:center;gap:12px;
+}
+.hero-eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--gold)}
+.hero-title{
+  font-family:var(--serif);font-size:clamp(48px,7vw,88px);font-weight:300;
+  color:var(--white);line-height:1.0;letter-spacing:-0.01em;margin-bottom:10px;
+}
+.hero-title em{font-style:italic;color:var(--gold-light)}
+.hero-subtitle{
+  font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-weight:300;
+  color:rgba(255,255,255,0.65);margin-bottom:40px;letter-spacing:0.02em;
+}
+.hero-specs{
+  display:flex;gap:32px;margin-bottom:48px;flex-wrap:wrap;
+}
+.spec{border-left:2px solid var(--gold);padding-left:16px}
+.spec-val{font-family:var(--serif);font-size:28px;font-weight:600;color:var(--white);line-height:1}
+.spec-label{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:4px}
+.hero-cta{
+  display:inline-flex;align-items:center;gap:12px;
+  background:var(--gold);color:var(--navy);
+  font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;
+  padding:16px 36px;text-decoration:none;transition:all 0.3s;cursor:pointer;border:none;
+}
+.hero-cta:hover{background:var(--gold-light);transform:translateY(-2px)}
+.hero-cta svg{transition:transform 0.3s}
+.hero-cta:hover svg{transform:translateX(4px)}
+
+.hero-urgency{
+  position:absolute;bottom:40px;right:60px;z-index:10;text-align:right;
+}
+.urgency-number{
+  font-family:var(--serif);font-size:72px;font-weight:300;
+  color:var(--gold);line-height:1;opacity:0.9;
+}
+.urgency-text{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.5)}
+
+/* ── STRIP ── */
+.strip{
+  background:var(--gold);padding:14px 60px;
+  display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;
+}
+.strip-item{
+  font-size:11px;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--navy);font-weight:500;display:flex;align-items:center;gap:8px;
+}
+.strip-dot{width:4px;height:4px;background:var(--navy);border-radius:50%;opacity:0.4}
+
+/* ── SECCIONES GENERALES ── */
+section{padding:100px 60px}
+.label{
+  font-size:10px;letter-spacing:0.28em;text-transform:uppercase;
+  color:var(--gold);font-weight:400;margin-bottom:16px;
+  display:flex;align-items:center;gap:10px;
+}
+.label::before{content:'';display:block;width:24px;height:1px;background:var(--gold)}
+h2{font-family:var(--serif);font-size:clamp(36px,5vw,56px);font-weight:300;color:var(--navy);line-height:1.1;margin-bottom:20px}
+h2 em{font-style:italic;color:var(--gold)}
+
+/* ── POR QUÉ TENAYUCA ── */
+.porque{background:var(--white)}
+.porque-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;max-width:1200px;margin:0 auto}
+.porque-image{position:relative}
+.porque-image img{width:100%;height:500px;object-fit:cover;display:block}
+.porque-image-badge{
+  position:absolute;bottom:-20px;right:-20px;
+  background:var(--navy);color:var(--white);padding:24px;
+  font-family:var(--serif);
+}
+.badge-val{font-size:36px;font-weight:300;color:var(--gold);line-height:1}
+.badge-lab{font-size:10px;letter-spacing:0.15em;text-transform:uppercase;opacity:0.6;margin-top:4px}
+.porque-features{margin-top:40px;display:flex;flex-direction:column;gap:20px}
+.feature{display:flex;gap:16px;align-items:flex-start}
+.feature-icon{
+  width:36px;height:36px;border:1px solid var(--gold);flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;margin-top:2px;
+}
+.feature-icon svg{width:16px;height:16px;stroke:var(--gold);fill:none}
+.feature-title{font-weight:500;font-size:14px;margin-bottom:4px;color:var(--navy)}
+.feature-desc{font-size:13px;color:var(--muted);line-height:1.6}
+
+/* ── GALERÍA ── */
+.galeria{background:var(--warm);padding:100px 0}
+.galeria-header{padding:0 60px;margin-bottom:48px}
+.galeria-scroll{
+  display:flex;gap:16px;overflow-x:auto;padding:0 60px;
+  scrollbar-width:none;-ms-overflow-style:none;
+}
+.galeria-scroll::-webkit-scrollbar{display:none}
+.galeria-img{
+  flex:0 0 420px;height:300px;object-fit:cover;display:block;
+  transition:transform 0.4s;cursor:pointer;
+}
+.galeria-img:hover{transform:scale(1.02)}
+.galeria-note{
+  padding:20px 60px 0;font-size:12px;letter-spacing:0.1em;
+  color:var(--muted);text-transform:uppercase;
+}
+
+/* ── DETALLES ── */
+.detalles{background:var(--navy);color:var(--white)}
+.detalles .label::before{background:var(--gold)}
+.detalles h2{color:var(--white)}
+.detalles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.08);margin-top:60px;border:1px solid rgba(255,255,255,0.08)}
+.detalle-item{padding:40px 32px;background:var(--navy)}
+.detalle-val{font-family:var(--serif);font-size:42px;font-weight:300;color:var(--gold);line-height:1;margin-bottom:8px}
+.detalle-lab{font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45)}
+.detalle-desc{font-size:13px;color:rgba(255,255,255,0.6);margin-top:10px;line-height:1.6}
+
+/* ── FORMULARIO ── */
+.formulario{background:var(--cream);max-width:100%}
+.form-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;max-width:1200px;margin:0 auto;align-items:start}
+.form-left h2{margin-bottom:16px}
+.form-left p{font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:32px}
+.form-urgency{
+  background:var(--navy);padding:24px 28px;
+  display:flex;align-items:center;gap:20px;
+}
+.fu-number{font-family:var(--serif);font-size:48px;font-weight:300;color:var(--gold);line-height:1}
+.fu-text{font-size:12px;color:rgba(255,255,255,0.7);line-height:1.5}
+.fu-text strong{color:var(--white);display:block;font-size:14px;margin-bottom:4px}
+
+.form-box{
+  background:var(--white);padding:48px;
+  box-shadow:0 2px 40px rgba(10,37,64,0.06);
+}
+.form-box h3{
+  font-family:var(--serif);font-size:28px;font-weight:300;
+  color:var(--navy);margin-bottom:8px;
+}
+.form-box p{font-size:13px;color:var(--muted);margin-bottom:32px}
+
+.cta-secundario {
+  background: linear-gradient(135deg, var(--navy) 0%, rgba(28, 44, 74, 0.95) 100%);
+  padding: 60px 20px;
+  text-align: center;
+  margin: 80px 0;
+}
+
+.cta-sec-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-sec-inner h3 {
+  font-family: var(--serif);
+  font-size: 32px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.cta-sec-inner p {
+  font-family: var(--sans);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.btn-cta-sec {
+  background: var(--gold);
+  color: var(--navy);
+  border: none;
+  padding: 14px 40px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-family: var(--sans);
+}
+
+.btn-cta-sec:hover {
+  background: #d4af6a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(212, 175, 106, 0.3);
+}
+
+/* ── NOSOTROS ── */
+.nosotros{background:var(--white);border-top:1px solid #EDE9E0}
+.nosotros-inner{max-width:700px;margin:0 auto;text-align:center}
+.nosotros-inner p{font-size:16px;color:var(--muted);line-height:1.8;margin-bottom:40px}
+.nosotros-cta{
+  display:inline-flex;align-items:center;gap:10px;
+  border:1px solid var(--navy);color:var(--navy);
+  font-size:11px;letter-spacing:0.2em;text-transform:uppercase;
+  padding:14px 32px;text-decoration:none;transition:all 0.3s;cursor:pointer;background:none;
+}
+.nosotros-cta:hover{background:var(--navy);color:var(--white)}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--navy);padding:40px 60px;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;
+}
+.footer-text{font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.08em}
+.footer-wa{
+  display:flex;align-items:center;gap:8px;color:var(--gold);
+  font-size:12px;letter-spacing:0.1em;text-decoration:none;
+}
+
+/* ── ANIMACIONES ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.hero-eyebrow{animation:fadeUp 0.8s 0.1s both}
+.hero-title{animation:fadeUp 0.8s 0.25s both}
+.hero-subtitle{animation:fadeUp 0.8s 0.4s both}
+.hero-specs{animation:fadeUp 0.8s 0.55s both}
+.hero-cta{animation:fadeUp 0.8s 0.7s both}
+.hero-urgency{animation:fadeUp 0.8s 0.9s both}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  nav,section,.strip,footer{padding-left:24px;padding-right:24px}
+  .hero-content{padding:60px 24px 40px}
+  .hero-urgency{right:24px;bottom:24px}
+  .porque-grid,.form-wrap{grid-template-columns:1fr;gap:40px}
+  .detalles-grid{grid-template-columns:1fr 1fr}
+  .galeria-scroll,.galeria-header,.galeria-note{padding-left:24px;padding-right:24px}
+  .form-box{padding:32px 24px}
+  .urgency-number{font-size:48px}
+  footer{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+
+<!-- WhatsApp Flotante -->
+<a href="https://wa.me/525545706807?text=Quiero%20saber%20m%C3%A1s%20de%20Tenayuca%2066" 
+   target="_blank" 
+   class="whatsapp-flotante"
+   title="Contáctanos por WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.67.15-.23.297-.921.967-.129 1.167.792.2 1.59.54 2.23.96 1.02.84 1.49 2.27 1.68 3.57.18 1.3-.1 2.27-.6 2.77-.5.5-1.55 1.08-2.75.54-.63-.27-1.2-.63-1.73-1.04l-1.61.85c-.29.15-.59.15-.88.02l-2.64-1.29c-.69-.34-1.35-.75-1.98-1.23-.99-.81-1.8-1.78-2.43-2.87-.63-1.09-.99-2.3-.99-3.55 0-.35.03-.69.09-1.03.27-1.65 1.1-3.21 2.55-4.38 1.45-1.17 3.3-1.83 5.2-1.83 1.9 0 3.75.66 5.2 1.83 1.45 1.17 2.28 2.73 2.55 4.38.06.34.09.68.09 1.03 0 1.25-.36 2.46-.99 3.55-.63 1.09-1.44 2.06-2.43 2.87z"/>
+  </svg>
+  WhatsApp
+</a>
+
+<style>
+.whatsapp-flotante {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.whatsapp-flotante:hover {
+  background: #20ba5a;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+@media (max-width: 768px) {
+  .whatsapp-flotante {
+    bottom: 16px;
+    right: 16px;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+</style>
+
+<body>
+
+<!-- ── HERO ── -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-gold-line"></div>
+
+  <nav>
+    <div class="nav-logo"><img src="https://raw.githubusercontent.com/VidaTk/tenayuca-66/main/assets/LOGO_VRE_TRANSPARENTE.png" alt="VRE" style="height:40px;margin-right:8px;"/>VRE</div>
+    <div class="nav-badge">Tenayuca 66 · CDMX</div>
+  </nav>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Desarrollo Boutique Híbrido</div>
+    <h1 class="hero-title">Tenayuca 66<br>Residencial + <em>Comercial</em></h1>
+    <p class="hero-subtitle">Inversión dual garantizada. Locales + Departamentos rentables.</p>
+    <div class="hero-specs">
+      <div class="spec">
+        <div class="spec-val">$26.5M</div>
+        <div class="spec-label">Precio</div>
+      </div>
+      <div class="spec">
+        <div class="spec-val">736 m²</div>
+        <div class="spec-label">Construcción</div>
+      </div>
+      <div class="spec">
+        <div class="spec-val">5+4</div>
+        <div class="spec-label">Locales + Depto</div>
+      </div>
+      <div class="spec">
+        <div class="spec-val">AAA</div>
+        <div class="spec-label">Zona</div>
+      </div>
+    </div>
+    <button class="hero-cta" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'})">
+      Agendar visita privada
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+    
+    <!-- SOCIAL PROOF -->
+    <div style="margin-top:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.15);display:flex;gap:40px;flex-wrap:wrap;">
+      <div>
+        <div style="font-family:var(--serif);font-size:32px;font-weight:300;color:var(--gold);line-height:1;">9</div>
+        <div style="font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px;">Unidades en venta</div>
+      </div>
+      <div>
+        <div style="font-family:var(--serif);font-size:32px;font-weight:300;color:var(--gold);line-height:1;">3</div>
+        <div style="font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px;">Pisos existentes + permiso para 4to</div>
+      </div>
+      <div>
+        <div style="font-family:var(--serif);font-size:32px;font-weight:300;color:var(--gold);line-height:1;">Benito<br>Juárez</div>
+        <div style="font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px;">Zona con mayor IDH</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hero-urgency">
+    <div class="urgency-number">1</div>
+    <div class="urgency-text">Edificio<br>Completo</div>
+  </div>
+</section>
+
+<!-- ── STRIP ── -->
+<div class="strip">
+  <div class="strip-item">5 Locales comerciales</div>
+  <div class="strip-dot"></div>
+  <div class="strip-item">4 Departamentos en renta</div>
+  <div class="strip-dot"></div>
+  <div class="strip-item">Ingresos mensuales garantizados</div>
+  <div class="strip-dot"></div>
+  <div class="strip-item">Permiso para 4to piso</div>
+  <div class="strip-dot"></div>
+  <div class="strip-item">Esquina estratégica</div>
+</div>
+
+<!-- ── POR QUÉ TENAYUCA ── -->
+<section class="porque">
+  <div class="porque-grid">
+    <div class="porque-image">
+      <img src="https://raw.githubusercontent.com/VidaTk/tenayuca-66/main/assets/tenayuca-exterior.jpg" alt="Tenayuca 66"/>
+      <div class="porque-image-badge">
+        <div class="badge-val">Dual</div>
+        <div class="badge-lab">Ingresos comerciales<br>+ residenciales</div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Por qué invertir aquí</div>
+      <h2>Tenayuca 66,<br>una zona <em>estratégica</em></h2>
+      <p style="color:#6B6560;font-size:15px;line-height:1.8;margin-bottom:8px">
+        Ubicada en Letrán Valle, Benito Juárez — la alcaldía con mayor índice de desarrollo humano en México. 
+        Esquina estratégica Tenayuca × Chichén Itzá. Acceso inmediato a las principales arterias del centro de la ciudad.
+      </p>
+      <div class="porque-features">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <div class="feature-title">Edificio boutique 100% ocupado</div>
+            <div class="feature-desc">5 locales comerciales + 4 departamentos en renta. Flujo de ingresos dual e inmediato.</div>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="feature-title">Permiso para 4to piso autorizado</div>
+            <div class="feature-desc">Certificado Único de Zonificación permite construcción de nivel adicional. Value-add garantizado.</div>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <div class="feature-title">Zona CEA + zona comercial activa</div>
+            <div class="feature-desc">560+ establecimientos en Letrán Valle. Flujo constante de clientes corporativos y profesionales.</div>
+            <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(28, 44, 74, 0.1); font-size: 13px; color: var(--muted);">
+            ✓ Proceso 100% seguro · ✓ Documentación verificada · ✓ Asesor dedicado
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GALERÍA ── -->
+<section class="galeria">
+  <div class="galeria-header">
+    <div class="label">Espacios reales</div>
+    <div style="margin: 48px 0; padding: 40px; background: rgba(28, 44, 74, 0.05); border-radius: 8px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1000px; margin: 0 auto;">
+        <div>
+          <h4 style="font-family: var(--serif); font-size: 18px; color: var(--navy); margin-bottom: 16px;">Para Inversionistas</h4>
+          <p style="font-size: 14px; color: var(--muted); line-height: 1.6;">
+            ✓ Flujo de ingresos dual (comercial + residencial)<br>
+            ✓ Gastos operativos muy bajos<br>
+            ✓ Plusvalía garantizada en zona AAA<br>
+            ✓ Opción de expansión con 4to piso
+          </p>
+        </div>
+        <div>
+          <h4 style="font-family: var(--serif); font-size: 18px; color: var(--navy); margin-bottom: 16px;">Para Inquilinos</h4>
+          <p style="font-size: 14px; color: var(--muted); line-height: 1.6;">
+            ✓ Locales: ubicación comercial premium<br>
+            ✓ Depto: zona tranquila conectada<br>
+            ✓ Proximidad a centros de trabajo<br>
+            ✓ Acceso fácil y estacionamiento seguro
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2>Conoce el <em>edificio</em></h2>
+  </div>
+  <div class="galeria-scroll">
+    <img class="galeria-img" src="https://raw.githubusercontent.com/VidaTk/tenayuca-66/main/assets/tenayuca-exterior.jpg" alt="Exterior"/>
+    <img class="galeria-img" src="https://raw.githubusercontent.com/VidaTk/tenayuca-66/main/assets/tenayuca-locales.jpg" alt="Locales"/>
+    <img class="galeria-img" src="https://raw.githubusercontent.com/VidaTk/tenayuca-66/main/assets/tenayuca-cafe-tucan.jpg" alt="Café Tucán"/>
+  </div>
+  <div class="galeria-note">Desliza para ver más espacios →</div>
+</section>
+
+<!-- ── UBICACIÓN / MAPA ── -->
+<section class="porque" style="padding-top:60px;">
+  <div class="porque-grid">
+    <div class="porque-image">
+      <img src="https://raw.githubusercontent.com/VidaTk/tenayuca-66/main/assets/tenayuca-mapa.png" alt="Ubicación Tenayuca 66"/>
+    </div>
+    <div>
+      <div class="label">Ubicación exacta</div>
+      <h2>Esquina <em>Tenayuca × Chichén Itzá</em></h2>
+      <p style="color:#6B6560;font-size:15px;line-height:1.8;margin-bottom:8px">
+        Calle Tenayuca número 66, Colonia Letrán Valle, Alcaldía Benito Juárez, C.P. 03650, Ciudad de México.
+        A pasos del Metro División del Norte y a minutos de Del Valle, Narvarte y Av. Universidad.
+      </p>
+      <a href="https://www.google.com/maps/search/Calle+Tenayuca+n%C3%BAmero+66,+Colonia+Letr%C3%A1n+Valle,+Alcald%C3%ADa+Benito+Ju%C3%A1rez,+C.P.+03650,+Ciudad+de+M%C3%A9xico/@19.3820101,-99.1618597,16z?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" 
+         target="_blank" 
+         class="hero-cta" 
+         style="margin-top:24px;background:var(--navy);color:var(--white);">
+        Ver ubicación en Google Maps
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── DETALLES ── -->
+<section class="detalles">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="label">Especificaciones</div>
+    <h2>Todo lo que <em>incluye</em></h2>
+    <div class="detalles-grid">
+      <div class="detalle-item">
+        <div class="detalle-val">5</div>
+        <div class="detalle-lab">Locales comerciales</div>
+        <div class="detalle-desc">Versátiles: consultorios, oficinas, comercio, cafés o co-working</div>
+      </div>
+      <div class="detalle-item">
+        <div class="detalle-val">4</div>
+        <div class="detalle-lab">Departamentos en renta</div>
+        <div class="detalle-desc">Ingresos residenciales fijos y garantizados de profesionistas</div>
+      </div>
+      <div class="detalle-item">
+        <div class="detalle-val">736</div>
+        <div class="detalle-lab">Metros construidos</div>
+        <div class="detalle-desc">247 m² de terreno en esquina estratégica y visible</div>
+      </div>
+      <div class="detalle-item">
+        <div class="detalle-val">3+1</div>
+        <div class="detalle-lab">Pisos (actual + permitido)</div>
+        <div class="detalle-desc">Certificado autoriza construcción de 4to piso para expansión</div>
+      </div>
+      <div class="detalle-item">
+        <div class="detalle-val">Muy Bajo</div>
+        <div class="detalle-lab">Gastos operativos</div>
+        <div class="detalle-desc">Mantenimiento y servicios optimizados en zona céntrica</div>
+      </div>
+      <div class="detalle-item">
+        <div class="detalle-val">AAA</div>
+        <div class="detalle-lab">Zona de alto flujo</div>
+        <div class="detalle-desc">Benito Juárez, Letrán Valle, 560+ establecimientos cercanos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FORMULARIO ── -->
+<section class="formulario" id="formulario">
+  <div class="form-wrap">
+    <div class="form-left">
+      <div class="label">Edificio completo en venta</div>
+      <h2>Agenda tu <em>visita privada</em></h2>
+      <p>Nuestro equipo te contactará en menos de 2 horas para coordinar una visita personalizada al edificio y resolver cualquier duda sobre precios, financiamiento, flujo de ingresos y oportunidad de expansión.</p>
+      <div class="form-urgency">
+        <div class="fu-number">1</div>
+        <div class="fu-text">
+          <strong>Oportunidad exclusiva</strong>
+Edificio completo. Locales + departamentos. Demanda activa de inversionistas.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-box">
+      <h3>Solicita información completa</h3>
+      <p>Especificaciones, flujo de ingresos, opciones de financiamiento y permiso de construcción</p>
+      
+      <form id="vre-form" style="display:flex;flex-direction:column;gap:16px;">
+        
+        <div>
+          <label style="display:block;font-weight:500;margin-bottom:8px;font-size:14px;color:var(--navy);">
+            Nombre completo *
+          </label>
+          <input type="text" name="nombre" required 
+            style="width:100%;padding:12px 15px;border:1px solid #e0e0e0;border-radius:6px;font-size:15px;font-family:var(--sans);"/>
+        </div>
+        
+        <div>
+          <label style="display:block;font-weight:500;margin-bottom:8px;font-size:14px;color:var(--navy);">
+            Email *
+          </label>
+          <input type="email" name="email" required 
+            style="width:100%;padding:12px 15px;border:1px solid #e0e0e0;border-radius:6px;font-size:15px;font-family:var(--sans);"/>
+        </div>
+        
+        <div>
+          <label style="display:block;font-weight:500;margin-bottom:8px;font-size:14px;color:var(--navy);">
+            WhatsApp *
+          </label>
+          <input type="tel" name="telefono" required 
+            style="width:100%;padding:12px 15px;border:1px solid #e0e0e0;border-radius:6px;font-size:15px;font-family:var(--sans);"/>
+        </div>
+        
+        <div>
+          <label style="display:block;font-weight:500;margin-bottom:12px;font-size:14px;color:var(--navy);">
+            ¿Cuál es tu objetivo? *
+          </label>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <label style="display:flex;align-items:center;gap:10px;cursor:pointer;font-size:14px;color:var(--text);">
+              <input type="radio" name="objetivo" value="Invertir en edificio completo" required style="cursor:pointer;accent-color:var(--gold);"/>
+              Invertir en edificio completo
+            </label>
+            <label style="display:flex;align-items:center;gap:10px;cursor:pointer;font-size:14px;color:var(--text);">
+              <input type="radio" name="objetivo" value="Comprar para vivir o rentar" required style="cursor:pointer;accent-color:var(--gold);"/>
+              Comprar para vivir o rentar
+            </label>
+            <label style="display:flex;align-items:center;gap:10px;cursor:pointer;font-size:14px;color:var(--text);">
+              <input type="radio" name="objetivo" value="Ambos objetivos" required style="cursor:pointer;accent-color:var(--gold);"/>
+              Ambos objetivos
+            </label>
+          </div>
+        </div>
+        
+        <div>
+          <label style="display:block;font-weight:500;margin-bottom:8px;font-size:14px;color:var(--navy);">
+            Rango de presupuesto *
+          </label>
+          <select name="presupuesto" required 
+            style="width:100%;padding:12px 15px;border:1px solid #e0e0e0;border-radius:6px;font-size:15px;font-family:var(--sans);cursor:pointer;appearance:none;background-image:url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27currentColor%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3e%3cpolyline points=%276 9 12 15 18 9%27%3e%3c/polyline%3e%3c/svg%3e');background-repeat:no-repeat;background-position:right 10px center;background-size:20px;padding-right:40px;">
+            <option value="">Selecciona un rango</option>
+            <option value="$20M - $26.5M MXN">$20M - $26.5M MXN</option>
+            <option value="$26.5M - $35M MXN">$26.5M - $35M MXN</option>
+            <option value="$35M+ MXN">$35M+ MXN</option>
+          </select>
+        </div>
+        
+        <div>
+          <label style="display:block;font-weight:500;margin-bottom:8px;font-size:14px;color:var(--navy);">
+            ¿Cuándo disponible para visita? *
+          </label>
+          <select name="disponibilidad" required 
+            style="width:100%;padding:12px 15px;border:1px solid #e0e0e0;border-radius:6px;font-size:15px;font-family:var(--sans);cursor:pointer;appearance:none;background-image:url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27currentColor%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3e%3cpolyline points=%276 9 12 15 18 9%27%3e%3c/polyline%3e%3c/svg%3e');background-repeat:no-repeat;background-position:right 10px center;background-size:20px;padding-right:40px;">
+            <option value="">Selecciona disponibilidad</option>
+            <option value="Este fin de semana">Este fin de semana</option>
+            <option value="Próxima semana">Próxima semana</option>
+            <option value="Flexible">Flexible</option>
+          </select>
+        </div>
+        
+        <button type="submit" class="hero-cta" style="width:100%;justify-content:center;margin-top:16px;">
+          Agendar visita privada
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        
+        <div id="form-status" style="text-align:center;font-size:14px;margin-top:12px;display:none;padding:12px;border-radius:6px;">
+          <span id="status-message"></span>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECUNDARIO -->
+<section class="cta-secundario">
+  <div class="cta-sec-inner">
+    <h3>¿Quieres conocer más detalles?</h3>
+    <p>Descarga nuestro catálogo completo con especificaciones, financiamiento e información del 4to piso permitido</p>
+    <button class="btn-cta-sec" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'})">
+      Descargar catálogo
+    </button>
+  </div>
+</section>
+
+<!-- ── NOSOTROS ── -->
+<section class="nosotros">
+  <div class="nosotros-inner">
+    <div class="label" style="justify-content:center">Vida Real Estate</div>
+    <h2>Inversionistas <em>exigentes</em>,<br>propiedades estratégicas</h2>
+    <p>Conectamos a personas que buscan rentabilidad garantizada con las mejores propiedades boutique de México. Un proceso seguro, transparente y personalizado de principio a fin.</p>
+    <button class="nosotros-cta" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'})">
+      Hablar con un asesor
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div style="color:white;font-weight:600;">VRE</div>
+  <div class="footer-text">© 2026 Vida Real Estate · Tenayuca 66, CDMX · Todos los derechos reservados</div>
+  <div style="display:flex;align-items:center;gap:24px;">
+    <a href="https://www.google.com/maps/search/Calle+Tenayuca+n%C3%BAmero+66,+Colonia+Letr%C3%A1n+Valle,+Alcald%C3%ADa+Benito+Ju%C3%A1rez,+C.P.+03650,+Ciudad+de+M%C3%A9xico/@19.3820101,-99.1618597,16z?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="footer-wa">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+      Ver en Google Maps
+    </a>
+    <a href="https://wa.me/525545706807?text=Quiero%20saber%20m%C3%A1s%20de%20Tenayuca%2066" class="footer-wa">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp directo
+    </a>
+  </div>
+</footer>
+
+<script> 
+    document.getElementById('vre-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(this);
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const statusDiv = document.getElementById('form-status');
+      const statusMsg = document.getElementById('status-message');
+      
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Enviando...';
+      
+      // Mostrar éxito inmediatamente (sin envío a servidor por ahora)
+      statusDiv.style.display = 'block';
+      statusDiv.style.color = '#2d5f2d';
+      statusDiv.style.background = '#e8f5e9';
+      statusMsg.textContent = '✓ ¡Gracias! Nos pondremos en contacto en las próximas 2 horas.';
+      
+      this.reset();
+      
+      setTimeout(() => {
+        statusDiv.style.display = 'none';
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Agendar visita privada<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+      }, 5000);
+    });
+    </script>  
+
+</body>
+</html>
