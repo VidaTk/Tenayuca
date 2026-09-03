@@ -734,7 +734,21 @@ Edificio completo. Locales + departamentos. Demanda activa de inversionistas.
       submitBtn.disabled = true;
       submitBtn.innerHTML = 'Enviando...';
       
-      // Mostrar éxito inmediatamente (sin envío a servidor por ahora)
+      const submitUrl = 'https://script.google.com/macros/s/AKfycbwjrKklwG3ht2fV-qG3-CDuSe7MOUShq9cnNxiu0SDCVQKZdMeZ-e4QX8CDr3AecDDj/exec';
+      
+      const params = new URLSearchParams();
+      params.append('nombre', formData.get('nombre') || '');
+      params.append('email', formData.get('email') || '');
+      params.append('telefono', formData.get('telefono') || '');
+      params.append('objetivo', formData.get('objetivo') || '');
+      params.append('presupuesto', formData.get('presupuesto') || '');
+      params.append('disponibilidad', formData.get('disponibilidad') || '');
+      
+      fetch(submitUrl, {
+        method: 'POST',
+        body: params
+      }).catch(e => console.log('Enviado'));
+      
       statusDiv.style.display = 'block';
       statusDiv.style.color = '#2d5f2d';
       statusDiv.style.background = '#e8f5e9';
